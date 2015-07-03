@@ -287,6 +287,11 @@ public class InstallAppProgress extends Activity implements View.OnClickListener
     }
 
     @Override
+    public void onPause() {
+        finish();
+    }
+
+    @Override
     protected void onDestroy() {
         super.onDestroy();
     }
